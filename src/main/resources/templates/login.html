@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="DIALETO_11_-removebg-preview.png" type="image/x-icon">
+  <title>Dialeto</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login/css/login.css">
+</head>
+<body>
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="login/img/thoughtful-attractive-woman-in-spectacles-writes-in-diary-to-do-list-of-goals-makes-notes-in-personal-organizer.jpg" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <a href="/"><img src="login/img/dialeto.png" alt="login" class="dbt" id="logo"></a>
+          <div class="card-body">
+          <div class="brand-wrapper">
+          </div>
+            <p class="login-card-description">Entre agora</p>
+         <!-- <form th:action="@{/login}" --><form method="post">
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group mb-4">
+              <label for="password" class="sr-only">Password</label>
+              <input type="password" name="password" id="password" class="form-control" placeholder="Senha">
+            </div>
+            <div th:if='${param.error}'>Usuario e/ou senha invalidos</div>
+            <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Entrar" href="/">
+            <a href="#!" class="forgot-password-link">Esqueci a senha</a>
+            <p class="login-card-footer-text">Crie sua conta. <a href="registro-aluno.html" class="text-reset">Registre-se!</a></p>
+            <!-- Trigger the modal with a button -->
+            <div class="login-card-footer-nav">
+            <a type="button" class="login-card-footer-nav" data-toggle="modal" data-target="#myModal">Politica de privacidade</a>
+            <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Termos da pagina</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                      <div class="modal-body">
+                        <p>Termo de Autorização de Uso de Imagem: pegar da Internet ou contratar advogado? A violação de direitos 
+                        de imagem pode te sujeitar a consequências civis e criminais. Conheça bem os riscos antes de entrar em 
+                        uma aventura jurídica por conta própria. Créditos da imagem: Tam Nguyen, via Unsplash. Uso autorizado. . 
+                        Em todos esses casos, em vez de te ajudar e te proteger, o Termo de Autorização de Uso de Imagem vai te 
+                        atrapalhar mais ainda. Não tente se aventurar sozinho em uma situação que envolve direitos seus e de outras 
+                        pessoas. O que custa procurar um advogado? Custa dinheiro sim. Um advogado sério e especializado vai te cobrar 
+                        para produzir um Termo de Autorização de Uso de Imagem (ou qualquer documento, na verdade!). Mas, se você prefere 
+                        não pagar o preço, o que era pra ser rápido, fácil e gratuito pode acabar te custando mais caro do que um honorário. 
+                        Como eu disse antes, os direitos de imagem são protegidos pela Constituição Federal. Também são protegidos pelo 
+                        Código Civil. Se o uso indevido da imagem de alguém acabar violando a honra e reputação da pessoa, também pode ser 
+                        caracterizado o crime de difamação. Em resumo: a violação de diretos de imagem sujeita você a processos judiciais 
+                        civis e criminais, pagamento de indenização, multa, remoção de postagem, impedimento de usar a imagem, rescisões 
+                        contratuais e muito mais. Não é melhor agir com prudência e seriedade? Na verdade, ter responsabilidade é o mínimo 
+                        que qualquer pessoa deve fazer. E se o seu trabalho envolve o uso de imagem de terceiros, a assessoria de um advogado 
+                        é mais importante ainda. Seja profissional: procure um profissional. Espero que esse texto tenha te ajudado a entender 
+                        melhor sobre esse assunto!</p>
+                      </div>
+                  </div>
+            </div>
+          </div>
+            </div>
+          </form>
+          </div>
+          </div>
+        </div>
+      <!-- <div class="card login-card">
+        <img src="assets/images/login.jpg" alt="login" class="login-card-img">
+        <div class="card-body">
+          <h2 class="login-card-title">Login</h2>
+          <p class="login-card-description">Sign in to your account to continue.</p>
+          <form action="#!">
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="password" class="sr-only">Password</label>
+              <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-prompt-wrapper">
+              <div class="custom-control custom-checkbox login-card-check-box">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember me</label>
+              </div>
+              <a href="#!" class="text-reset">Forgot password?</a>
+            </div>
+            <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+          </form>
+          <p class="login-card-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
+        </div>
+      </div> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

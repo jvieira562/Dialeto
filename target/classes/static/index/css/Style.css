@@ -1,0 +1,64 @@
+
+body{
+   font-family: Zilla Slab, cursive;
+}
+
+#nav-branca{
+   background-color: #E5E5E5;
+}
+#jogos{
+background-color: #f6f6f6;
+}
+#bg{ 
+   background-color: #5A2976;
+}
+#racionais{
+   text-align: center;
+   text-transform: uppercase;
+}
+.banner{
+   align-items: center;
+   margin-left: 10%;
+   margin-top: 10%;
+}
+#midia{
+   background-color:#5a2976 ;
+}
+.navbar{
+   background-color: #662577;
+}
+.buttons a{
+   color: #662577;
+   font-family: Zilla Slab;
+}
+#comentario{
+ background-color: #EDEDED;
+}
+#cadastro{
+   display: grid;
+   margin-left: 10%;
+}
+#cadastre{
+   background-color: #8A27AC;
+}
+#cadastre a{
+   color: white;
+}
+.Aurora{
+   width: 40%;
+   margin-left: 28%;
+}
+.icone{
+   padding: 2%;
+}
+#titulo{
+   margin-left: 37%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+#entrar{
+   background-color: #F6C514;
+}
+#periferia{
+   background-color: #EDEDED;
+}
