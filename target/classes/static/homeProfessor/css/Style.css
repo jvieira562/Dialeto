@@ -1,0 +1,55 @@
+body{
+    font-family: Zilla Slab, cursive;
+ }
+ 
+ #nav-branca{
+    background-color: #E5E5E5;
+ }
+ 
+ #nav-usuario{
+    border-style: solid;
+    border-color:#5A2976;
+ }
+ 
+ #bg{ 
+    background-color: white;
+    text-align: center;
+ }
+ #espaco-botao{
+    margin-bottom: 2%;
+ }
+ #menu-hover{
+    margin-left: 30%;
+    background-color: #5A2976;
+ }
+ #titulo{
+    color: #E5E5E5;
+ }
+ #alunos{
+    border-radius: 3%;
+    align-content: space-between;
+    margin-right: 3%;
+   }
+   #alunos a{
+      color: black;
+   }
+ 
+ .navbar{
+    background-color: #662577;
+ }
+ #chatbox{
+    background-color: #E5E5E5;
+    border-style:solid;
+    border-color:#5A2976 ;
+    font-family: Zilla Slab, cursive;
+ }
+ #rotulo{
+     color: #5A2976;
+     font-family: Zilla Slab, cursive;
+ }
+ #painel{
+     border-color: #5A2976;
+ }
+ #nalunos{
+     margin-left: 6%;
+ }

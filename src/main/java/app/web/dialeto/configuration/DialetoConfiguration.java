@@ -8,7 +8,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 
 
 @Configuration
@@ -16,28 +15,25 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 public class DialetoConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Bean
-	public static BCryptPasswordEncoder passwordEncoder(){
+	public static BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
     }
-	 public void addResourceHandlers(ResourceHandlerRegistry registry) {
-             registry.addResourceHandler("/resources/static**")
-                     .addResourceLocations("/resources/static/");
-     }
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-		.antMatchers("/", "/conteudo").access("hasAnyAuthority('ALUNOS')")
-		.antMatchers("/", "/areaprof").access("hasAnyAuthority('PROFESSORES')")
+		.antMatchers("/", "/escCadastro", "/registroAluno", "/registroProf", "/index/**", "/login/**",
+				"/escRegistro/**", "/registroAluno/**", "/registroProf/**").permitAll()
+		
+		.antMatchers("/conteudo", "/conteudo/**").access("hasAnyAuthority('ALUNO')")
+		.antMatchers("/areaprof", "/areaprof/**").access("hasAnyAuthority('PROFESSOR')")
 		.anyRequest().authenticated().and().formLogin().loginPage("/login").permitAll()
 		.and()
 		.logout().logoutRequestMatcher( new AntPathRequestMatcher("/logout"))
-		.logoutSuccessUrl("/").permitAll()
-		;
-		
+		.logoutSuccessUrl("/").permitAll();
 	}
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication().withUser("user@user")
-			.password(passwordEncoder().encode("password")).authorities("USER");
+			.password(passwordEncoder().encode("password")).authorities("ALUNO");
 	}
 }*/

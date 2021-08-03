@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dialeto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Provê informações sobre o app e como ele se comporta quando instalado -->
+    <link rel="manifest" href="../conteudoAluno/json/manifest.json">
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+        
+        <!-- Tags para compatibilidade em iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Meu App">
+        <link rel="apple-touch-icon" href="../conteudoAluno/img/icon-192.png">
+        
+        <!--Link do framework e js's-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../conteudoAluno/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="../conteudoAluno/css/Style.css" media="screen" />
+        <script src="main.js" defer></script>
+        <script type="text/javascript" src="../conteudoAluno/js/chatbox.js"></script>
+    </head>
+    <body>
+        <!--navbar branca-->
+        <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-branca">
+            <a class="navbar-item" href="/conteudoAlunoLista">
+                <img class="pts" id="pt" src="../conteudoAluno/img/OIP.png">
+            </a>
+            <div class="navbar-brand is-justify-content-left">
+                <a class="navbar-item" href="" id="logo">
+                    <img src="../conteudoAluno/img/dialeto.png">
+                </a>
+                <div class="column is-full">
+
+                </div>
+                <a class="navbar-item" href="" id="margim">
+                    <img src="../conteudoAluno/img/mapa.png">
+                    <h1>Minha trajetória</h1>
+                </a>
+                <a class="navbar-item" href="">
+                    <img src="../conteudoAluno/img/recompensas.png">
+                    <h1>Recompensas</h1>
+                    <a class="navbar-item" href="">
+                        <img class="pts" id="pt" src="../conteudoAluno/img/índice.jpg">
+                        <h1>22</h1>
+                    </a>
+            </nav>
+            </div>
+        <!-- navbar menu-->
+        <nav class="navbar" role="navigation" aria-label="main navigation"  id="nav-usuario">
+            <div class="navbar-brand">
+                <div class="navbar-item has-dropdown is-hoverable" id="menu-hover" >
+                    <a class="navbar-link" id="titulo">
+                        <img src="../conteudoAluno/img/pasta(1).png"> Nível
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Conceitos I
+                        </a>
+                        <a class="navbar-item">
+                            Conceitos I
+                        </a>
+                        <a class="navbar-item">
+                            Lead
+                        </a>
+                        <a class="navbar-item">
+                            Estrutura da redação
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="/redacaoFinal">
+                            Redação Final
+                        </a>
+                    </div>
+                    <a class="navbar-item" href="">
+
+                    </a>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable" id="menu-hovers" >
+                    <a class="navbar-link" id="titulo">
+                        <img src="../conteudoAluno/img/perfil-de-usuario.png"> Menu
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/editarPerfilAluno">
+                            Editar usuario
+                        </a>
+                        <a class="navbar-item" href="/login">
+                            Sair
+                        </a>
+
+                    </div>
+                    <a class="navbar-item" href="">
+
+                    </a>
+                </div>
+                    </div>
+                    </div>
+        </nav>
+
+
+<!--fim da navbar menu-->
+
+<!--parte de conteudo e chat-->
+<div class="columns">
+    <div class="column"  id="conteudo">
+        <section class="hero is-link is-fullheight-with-navbar">
+            
+            <div class="hero-body" id="bg">
+                <div class="column">
+                    <div class="box" id="alunos">
+						<h1 class="title" th:text="${titulo}"></h1>
+						<h2 align="left" th:text="${conteudo}"></h2>
+						<h1 class="title" th:text="${titulo2}"></h1>
+						<h2 align="left" th:text="${conteudo2}"></h2>
+						<h1 class="title" th:text="${titulo3}"></h1>
+						<h2 align="left" th:text="${conteudo3}"></h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--chatbox-->
+        <div class="column-is-three-quarters">
+            <section class="hero is-fullheight is-bold" id="chatbox">
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="card is-rounded">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        Tire suas dúvidas!
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content" id="chatroom">
+                                        
+                                        <br>
+                                        
+                                        <br>
+                                       
+                                        <br>
+                                      
+                                        <br>
+                                      
+                                        <br>
+                                       
+                                        <br>
+                                       
+                                        <br>
+                                       
+                                        <br>
+                                       
+                                        <br>
+                                        
+                                        <br>
+                                      
+                                        <br>
+                                       
+                                        <br>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <div class="container" style="margin: 5px;">
+                                        <p>
+                                            Laura Xavier:
+                                        </p>
+                                    </div>
+                                    <div class="container" style="margin: 5px;">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-small" type="text" id="chatinput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
+        
+    </div>
+</div>
+<!--fim da imagem-->
+<div class="columns" id="botao-pdf">
+    <div class="column">
+        <button class="button">
+            <img id="column" src="../conteudoAluno/img/pdf.png" >
+            PDF</button>
+
+     <a href="/jogos">   <button class="button">
+            <img id="columns" src="../conteudoAluno/img/mapa.png">
+            Quizz do exercício</button></a>
+    </div>
+
+    <div class="column">
+
+    </div>
+</body>
+</html>

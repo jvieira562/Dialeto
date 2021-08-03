@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="DIALETO_11_-removebg-preview.png" type="image/x-icon">
+	<title>Dialeto</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../editarPerfilProfessor/css/loginp.css">
+</head>
+
+<body>
+	<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+		<div class="container">
+			<div class="card login-card">
+				<div class="row no-gutters">
+					<div class="col-md-3">
+						<button>
+							<div alt="login" class="login-card-imgg">
+								<div alt="login" class="login-card-img">
+									<img src="../editarPerfilProfessor/images/sideways-shot-of-black-busy-female-journalist-studies-papers-for-writing-article.jpg"
+										alt="login" class="login-card-img">
+								</div>
+							</div>
+						</button>
+						<div class="fotoperfil">
+						</div>
+					</div>
+					<nav class="login-card-footer-nav">
+					</nav>
+					<div class="col-md-1">
+						<div class="columns" id="coluna">
+							<div class="column">
+								<img src="../editarPerfilProfessor/images/dialeto.png" alt="login" class="dbt" id="logo">
+							</div>
+							<div class="column">
+								<div class="column">
+									<div class="card-body">
+										<div class="brand-wrapper">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="coll-md-5">
+						<form action="#!">
+							<h2 class="login-card-description">Editar perfil</h2>
+							<div class="form-group">
+								<input type="text" name="full-name" id="full-name" class="form-control"
+									placeholder="Nome do Professor(a)" required>
+							</div>
+							<div class="login-card-footer-nav">
+								<h3>Sexo </h3>
+								<input type="RADIO" name="opcao" value="op1"> Masculino
+								<input type="RADIO" name="opcao" value="op2"> Feminino
+								<input type="RADIO" name="opcao" value="op3"> Outros
+							</div>
+							<br>
+							<div class="form-group ">
+								<input type="text" name="full-email" id="your-email" class="form-control"
+									placeholder="E-mail" required>
+							</div>
+							<div class="form-group">
+								<input type="text" name="your-CPF" id="your-CPF" class="form-control" placeholder="CPF"
+									required title="Digite um CPF no formato: xxx.xxx.xxx-xx"> 
+									<!--pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+									title="Digite um CPF no formato: xxx.xxx.xxx-xx">-->
+							</div>
+							<div class="form-group">
+								<input type="number" name="full-name" id="full-name" class="form-control"
+									placeholder="Telefone" required>
+							</div>
+							<div class="form-group">
+								<input type="date" class="form-control" placeholder="Data de nascimento" required>
+							</div>
+							<div class="form-group mb-4">
+								<input type="password" name="password" id="password" class="form-control"
+									placeholder="Senha" required>
+							</div>
+							<div class="form-group">
+								<input type="text" name="full-name" id="full-name" class="form-control"
+									placeholder="Sobre" required>
+							</div>
+							<button type="button" class="btn btn-block login-btn mb-4" data-toggle="modal"
+								data-target="#myModal">Salvar</button>
+						</form>
+						<nav class="login-card-footer-nav">
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

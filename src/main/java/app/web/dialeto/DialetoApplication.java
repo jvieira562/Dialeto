@@ -8,6 +8,7 @@ public class DialetoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DialetoApplication.class, args);
+		System.out.println("\n\n DialetoApplication - dialeto\n\n");
 	}
 
 }

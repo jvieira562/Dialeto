@@ -1,0 +1,60 @@
+body{
+    font-family: Zilla Slab, cursive;
+ }
+ 
+ #nav-branca{
+    background-color: #E5E5E5;
+ }
+ 
+ #nav-usuario{
+    border-style: solid;
+    border-color:#5A2976;
+ }
+ 
+ #bg{ 
+    background-color: white;
+    text-align: center;
+ }
+ #espaco-botao{
+    margin-bottom: 2%;
+ }
+ #menu-hover{
+    margin-left: 30%;
+    background-color: #5A2976;
+ }
+ #titulo{
+    color: #E5E5E5;
+ }
+ #alunos h1{
+ color: #5A2976;
+ }
+ #alunos h2{
+     color: black;
+ }
+ 
+ .navbar{
+    background-color: #662577;
+  
+ }
+ .professora{
+    color: black;
+    margin-left: 3%;
+ 
+ }
+
+
+ #chatbox{
+    background-color: #E5E5E5;
+    border-style:solid;
+    border-color:#5A2976 ;
+    font-family: Zilla Slab, cursive;
+ }
+#botao-pdf{
+    margin-top: -71px;
+}
+#botao-pdf button{
+    background-color: #5A2976;
+    font-family: Zilla Slab, cursive;
+    color:#E5E5E5
+}
+ 

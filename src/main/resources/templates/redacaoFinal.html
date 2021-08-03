@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dialeto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Provê informações sobre o app e como ele se comporta quando instalado -->
+    <link rel="manifest" href="../telaRedacao/json/manifest.json">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+        <!-- Tags para compatibilidade em iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Meu App">
+        <link rel="apple-touch-icon" href="../telaRedacao/img/icon-192.png">
+
+        <!--Link do framework e js's-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../telaRedacao/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="../telaRedacao/css/Style.css" media="screen" />
+        <script src="main.js" defer></script>
+        <script type="text/javascript" src="../telaRedacao/js/chatbox.js"></script>
+    </head>
+    <body>
+        <!--navbar branca-->
+        <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-branca">
+
+            <div class="navbar-brand is-justify-content-left">
+                <a class="navbar-item" href="" id="logo">
+                    <img src="../telaRedacao/img/dialeto.png">
+                </a>
+                <div class="column is-full">
+
+                </div>
+                <a class="navbar-item" href="" id="margim">
+                    <img src="../telaRedacao/img/mapa.png">
+                    <h1>Minha trajetória</h1>
+                </a>
+                <a class="navbar-item" href="">
+                    <img src="../telaRedacao/img/recompensas.png">
+                    <h1>Recompensas</h1>
+                    <a class="navbar-item" href="">
+                        <img class="pts" id="pt" src="../telaRedacao/img/índice.jpg">
+                        <h1>22</h1>
+                    </a>
+            </nav>
+            </div>
+        <!-- navbar menu-->
+        <nav class="navbar" role="navigation" aria-label="main navigation"  id="nav-usuario">
+            <div class="navbar-brand">
+                <div class="navbar-item has-dropdown is-hoverable" id="menu-hover" >
+                    <a class="navbar-link" id="titulo">
+                        <img src="../telaRedacao/img/pasta(1).png"> Nível
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Conceitos I
+                        </a>
+                        <a class="navbar-item">
+                            Conceitos II
+                        </a>
+                        <a class="navbar-item">
+                            Lead
+                        </a>
+                        <a class="navbar-item">
+                            Estrutura da redação
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Redação Final
+                        </a>
+                    </div>
+                    <a class="navbar-item" href="">
+
+                    </a>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable" id="menu-hovers" >
+                    <a class="navbar-link" id="titulo">
+                        <img src="../telaRedacao/img/perfil-de-usuario.png"> Menu
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/editarPerfilAluno">
+                            Editar usuario
+                        </a>
+                        <a class="navbar-item" href="/login">
+                            Sair
+                        </a>
+
+                    </div>
+                    <a class="navbar-item" href="">
+
+                    </a>
+                </div>
+                    </div>
+                    </div>
+        </nav>
+
+<!--fim da navbar menu-->
+
+<!--parte de conteudo e chat-->
+<div class="columns">
+    <div class="column"  id="conteudo">
+        <div class="box" id="conteudo-texto">
+        <div class="control">
+            <textarea class="textarea" placeholder="" style="margin-top: 0px; margin-bottom: 0px; height: 610px;">
+			A desinformação e o descaso pelo tratamento da depressão
+
+
+Na série norte americana chamada “One day at a time”, é retratado a vivência de uma mãe, ex-militar que ao voltar da guerra, se depara com o divórcio do seu casamento, consequentemente, ela enfrenta seus problemas, como a depressão, e por um tempo se recusa a fazer o tratamento, porém, depois de muita insistência dos seus familiares, ela resolve continuar com o acompanhamento médico e as reuniões do grupo de apoio. Não é comum vermos investimento e a disponibilidade a apoios psicológicos na sociedade brasileira. Sabemos que isso é um problema no qual precisamos discutir constantemente.
+
+Primeiramente, a busca para o diagnóstico não é frequente, devido ao alto valor de uma consulta com profissionais na área psiquiátrica, segundo o site de pesquisas ‘IBGE’, o percentual de brasileiros que receberam diagnóstico da depressão por algum profissional, subiu 34,2% em seis anos, mesmo com o SUS disponibilizando consultas gratuitas, muitos brasileiros não possuem o conhecimento para ir solicitar auxílio.
+
+Ademais, não há muitos ambientes capacitados que ajudariam com a mudança de pensamentos que desprezam as doenças mentais. É de extrema importância o apoio e investimento desde a criação em nossas casas, até os dias de hoje, por ser um tratamento contínuo, portanto, abrir as nossas ideias evitar o problema que a falta de interesse causa.
+
+Entretanto, a melhor forma de trazer esse assunto, seria através de estímulos, como palestras governamentais, onde a acessibilidade seria exposta e a busca para novos diagnósticos surgiria. Quanto mais reforçado a importância da assistência à saúde mental, o indivíduo saberá lidar com os seus estigmas e se sentiria bem apesar de suas cicatrizes.
+            </textarea>
+
+          </div>
+        </div>
+        </div>
+        <!--chatbox-->
+        <div class="column-is-three-quarters">
+            <section class="hero is-fullheight is-bold" id="chatbox">
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns is-centered">
+                            <div class="card is-rounded">
+                                <header class="card-header">
+                                    <h2 class="card-header-title">
+                                    Temas
+                                    </h2>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content" id="chatroom">
+                                        
+                                       <b> 1) O estigma associado às doenças mentais<br> na sociedade brasileira</b><br><br>
+A maior parte das pessoas, quando ouve<br>
+falar em "saúde mental", pensa em "doença<br>
+mental". Mas a saúde mental implica muito<br>
+mais que a ausência de doenças mentais. <br>
+Pessoas mentalmente saudáveis compreendem <br>
+que ninguém é perfeito, que todos possuem limites<br>
+ e que não se pode ser tudo para todos. <br><br>
+
+                                       <b> 2) Preconceito Linguístico</b><br><br>
+No Brasil, o preconceito linguístico envolve<br>
+ as diferentes formas de falar e estão ligados<br>
+  com o conceito de “superioridade”.<br><br> 
+  
+  									   <b> 3) Inclusão Digital</b><br><br>
+Democratização da tecnologia é sem dúvida o<br>
+objetivo da inclusão digital. No Brasil ainda<br>
+existem muitos desafios para incluir os grupos<br>
+menos favorecidos.<br><br>       <button class="button button is-link" id="bot" is-outlined> Enviar </button>                                                                 
+                                    </div>
+                                </div>
+                                  
+                                <footer class="card-footer">
+                                    <div class="container" style="margin: 5px;">
+                                        <p>
+                                            Laura Xavier:
+                                        </p>
+                                    </div>
+                                    <div class="container" style="margin: 5px;">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input is-small" type="text" id="chatinput">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
+    </div>
+</div>
+<!--fim da imagem-->
+<div class="columns" id="botao-pdf">
+    <div class="column"></div>
+    <div class="column">
+    </div>
+    <div class="column">
+    </div>
+</body>
+</html>

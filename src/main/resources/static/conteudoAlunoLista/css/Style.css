@@ -1,0 +1,201 @@
+body{
+    font-family: Zilla Slab, cursive;
+ }
+ 
+ #nav-branca{
+    background-color: #E5E5E5;
+   
+ }
+ 
+ #mn {
+position:absolute;
+right: 90px;
+
+ }
+ #nav-usuario{
+    border-style: solid;
+    border-color:#5A2976;
+ }
+ 
+ #bg{ 
+    background-color: white;
+    text-align: center;
+ }
+ #espaco-botao{
+    margin-bottom: 2%;
+ }
+ #menu-hover{
+    margin-left: 30%;
+    background-color: #5A2976;
+ }
+ 
+ #titulo{
+    color: #E5E5E5;
+
+   
+ }
+
+
+ #alunos h1{
+ color: #5A2976;
+ }
+ #alunos h2{
+     color: black;
+ }
+ 
+ .navbar{
+    background-color: #662577;
+    margin: left 50px;
+    height: 60px;
+ }
+ #professora{
+    color: black;
+    margin-left: 3%;
+ 
+ }
+ #chatbox{
+    background-color: #E5E5E5;
+    border-style:solid;
+    border-color:#5A2976 ;
+    font-family: Zilla Slab, cursive;
+ }
+#botao-pdf{
+    margin-top: -71px;
+}
+#botao-pdf button{
+    background-color: #5A2976;
+    font-family: Zilla Slab, cursive;
+    color:#E5E5E5
+}
+ @media screen and (max-width: 721px) {
+
+   #mn {
+  position:absolute;
+  right: 9px;
+  
+   }
+   #espaco-botao{
+      margin-bottom: 2%;
+   }
+   
+   #titulo{
+      color: #E5E5E5;
+     margin-left: 5px;
+   }
+   
+   .navbar{
+      background-color: #662577;
+      margin-left: 5px;
+      height: 5px;
+      bottom: 500px;
+   }
+   #professora{
+      color: black;
+      margin-left: 3%;
+   
+   }
+  #botao-pdf{
+      margin-top: -7px;
+  }
+
+      }
+
+      #mn {
+         right: 900px;
+      }
+
+      #menu-hovers{
+         left: 900px;
+      }
+      
+      #ptss {
+         width: 30px;
+      }
+      
+
+      #logo {
+         width: 3%;
+      }
+      #menu-hovers{
+         left: 900px;
+      }
+      
+      #ptss {
+         width: 50px;
+      }
+      
+      #logo {
+         width: 30%;
+      }
+      
+      #margim .navbar-item{
+         margin-left: 90px;
+      }
+      #columns-is-full{
+         right: 90px;
+      }
+      
+      h1{
+         right: 90px;
+      }
+#alunoss {
+   background-color: #fff;
+}
+
+#bgs {
+   width: 30%;
+   background-color: white;
+   text-align: center;
+}
+
+.navbar-item {
+   right: 10px;
+}
+
+#menu-hovers{
+   left: 900px;
+   color: #E5E5E5;
+}
+
+.is-full{
+   margin: -10%;
+}
+
+.hero-body{
+   margin-bottom: 40px;
+}
+
+#conteudos{
+   margin-bottom: 100px;
+}
+#mnn {
+   margin-bottom: 100px;
+}
+#pts {
+   width: 40%;
+}
+#conteudo-texto{
+   background-image: url(./redacao.png);
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   align-items:center;
+   align-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.bot {
+   padding: 13px 20px 12px;
+   background-color: #5e2ba1;
+   border-radius: 4px;
+   font-size: 17px;
+   font-weight: bold;
+   line-height: 20px;
+   color: #ffffff;
+   margin-bottom: 24px; 
+}
+
+section.hero.is-link.is-fullheight-with-navbar{
+   background: #ffffff;
+}

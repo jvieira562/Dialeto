@@ -40,6 +40,7 @@ background-color: #f6f6f6;
 }
 #cadastre{
    background-color: #8A27AC;
+   color: #fff;
 }
 #cadastre a{
    color: white;
@@ -58,7 +59,56 @@ background-color: #f6f6f6;
 }
 #entrar{
    background-color: #F6C514;
+   color: #5a2976;
 }
 #periferia{
    background-color: #EDEDED;
 }
+#contato{
+   width: 30%;
+
+   background-color:#f6f6f6 ;
+}
+.icone-empoderar{
+   width: 220px;
+   padding: 7%;
+}
+#chamado{
+   background-color: #E5E5E5;
+   margin-left: 10%;
+   border-radius: 3%;
+}
+#chamado h1, h2{
+   color: #8A27AC;
+   font-family: auto;
+}
+#call-02 h2{
+  color: black;
+}
+#call-02 h1{
+   color:#f6f6f6 ;
+   background-color: #8A27AC;
+   font-family: auto;
+}
+#chamado03{
+   background-color: white;
+   margin-left: 10%;
+   width: 56%;
+}
+#chamado03 h1, h2{
+   color: #8A27AC;
+   font-family: auto;
+}
+#aurora{
+   margin-left: 9%;
+}
+ .space {
+	margin-top: 3%;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="../escolhaCadastro/img/" type="image/x-icon">
+	<!--../escolhaCadastro/DIALETO_11_-removebg-preview.png-->
+	<title>Dialeto</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../escolhaCadastro/css/logineec.css">
+	<!-- Provê informações sobre o app e como ele se comporta quando instalado -->
+	<link rel="manifest" href="../escolhaCadastro/json/manifest.json">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="//firebase/8.6.5/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<!-- Initialize Firebase -->
+	<script src="//firebase/init.js"></script>
+
+	<!-- Tags para compatibilidade em iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Meu App">
+	<link rel="apple-touch-icon" href="../escolhaCadastro/img/Dialeto.png">
+
+	<!--Link do framework-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css%22%3E">
+	<script src="main.js" defer></script>
+</head>
+
+<body>
+	<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+		<div class="container">
+			<div class="card login-card">
+				<div class="row no-gutters">
+					<div class="col-md-5">
+						<img src="../escolhaCadastro/img/writing-hand-person-pencil-wood-cup-105607-pxhere.com.jpg"
+							alt="login" class="login-card-img">
+					</div>
+					<div class="col-md-7">
+						<a href="/"><img src="../escolhaCadastro/img/dialeto.png" alt="login" class="dbt" id="logo"></a>
+						<div class="card-body">
+							<div class="brand-wrapper"></div>
+							<p class="login-card-description">
+								<strong>Escolha o cadastro que você deseja efetuar</strong>
+							</p>
+							<form action="#!">
+								<a href="registroAluno"><img src="../escolhaCadastro/img/aluno e professorr.png" name="login"
+										id="login" class="btn btn-block login-btn mb-4" type="button" value="Aluno"
+										href="registroAluno"></a> <a href="registroProf"><img
+										src="../escolhaCadastro/img/aluno e professorrr.png" name="login" id="login"
+										class="btn btn-block login-btn mb-4" type="button" value="Professor"></a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

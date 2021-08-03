@@ -1,0 +1,134 @@
+body {
+  font-family: 'Zilla Slab Highlight', cursive;
+  background-image: url(../img/sss.png);
+  min-height: 100vh;
+}
+.brand-wrapper {
+  margin-bottom: 19px; }
+  .brand-wrapper .logo
+  {
+    height: 37px; }
+.login-card {
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0px 30px 30px 30px rgba(0, 0, 0, 0.514);
+  overflow: hidden;
+  -webkit-border-radius: 27.5px;
+  -moz-border-radius: 27.5px;
+  -ms-border-radius: 27.5px;
+  -o-border-radius: 27.5px;
+}
+  .login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .login-card .card-body {
+    padding: 0px 60px 60px; }
+    @media (max-width: 422px) {
+      .login-card .card-body {
+        padding: 35px 24px; } }
+  .login-card-description {
+    font-size: 35px;
+    color: #5e2ba1;
+    font-weight: normal;
+    margin-bottom: 23px; }
+  .login-card form {
+    max-width: 326px; }
+  .login-card .form-control {
+    border: 1px solid #5e2ba1;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal; }
+    .login-card .form-control::-webkit-input-placeholder {
+      color: #5e2ba1; }
+    .login-card .form-control::-moz-placeholder {
+      color: #5e2ba1; }
+    .login-card .form-control:-ms-input-placeholder {
+      color: #5e2ba1; }
+    .login-card .form-control::-ms-input-placeholder {
+      color: #5e2ba1; }
+    .login-card .form-control::placeholder {
+      color: #5e2ba1; }
+  .login-card .login-btn {
+    padding: 10px 10px 10px;
+    background-color: #4f2469;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 240px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+    .login-card .login-btn:hover {
+      border: 1px solid  #c0bfbf;
+      background-color: transparent;
+      color:  #c4c2c2;
+      background-color: #132e7e;
+    }
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: #bbb9b9;
+    margin-bottom: 12px; }
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px; }
+    @media (max-width: 767px) {
+      .login-card-footer-text {
+        margin-bottom: 24px; } }
+  .login-card-footer-nav a {
+    font-size: Zilla Slab;
+    color: #4f2469;
+    font-size: 14px;
+    color: #4f2469; }
+    #coluna{
+      bottom: 0;
+    }
+    .dbt
+    {
+      width:  150px;
+      right: 650px;
+    }
+    #logo{
+      margin-left: 72%;
+      margin-top: 0%;
+    }
+    .login-card-footer-nav
+    {
+      margin-bottom: 7px;
+    }
+    @media screen and (max-width: 721px) {
+      .dbt
+        {
+          width:  20%;
+          height: 200px 200px;
+        }
+        #logo{
+          margin-left: 400px;
+          margin-top: -610px;
+        }
+        .login-card-img {
+          border-radius: 0;
+          position: absolute;
+          width: 100%;
+          height: 90%;
+          position: relative;
+          margin-top: 0px;
+          -o-object-fit: cover;
+          object-fit: cover;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+}
+      }

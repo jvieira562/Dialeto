@@ -1,358 +1,415 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dialeto</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Provê informações sobre o app e como ele se comporta quando instalado -->
-  <link rel="manifest" href="/manifest.json">
-  
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.6.5/firebase-app.js"></script>
-  
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
-    
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-    
-    <!-- Tags para compatibilidade em iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Meu App">
-    <link rel="apple-touch-icon" href="img/icon-192.png">
-    
-    <!--Link do framework-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" href="index/css/Style.css" media="screen" />
-    <script src="main.js" defer></script>
-    
-  </head>
-  <body>
-    <!--navbar branca-->
-    
-    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-branca">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="">
-          <img src="index/img/dialeto.png">
-        </a>
-        
-      </div>
-    </nav>
-    <!--Navbar e hero-->
-    <nav class="navbar">
-      <div class="container">
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-            </a>
-            <a class="navbar-item">
-            </a>
-          </div>
-          
-          <div class="navbar-end">
-            <div class="navbar-item">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  
-  
-  <section class="hero is-link is-fullheight-with-navbar">
-    
-    <div class="hero-body" id="bg">
-      <p class="title">
-        <img class="banner" src="index/img/lapis.png" href='logo'>
-        
-        <div class="buttons" id="cadastro">
-          <div class="column">
-            <img src="index/img/chamada.png">
-          </div>
-          <button class="button is-large is-fullwidth" id="cadastre"><a>Começar</a></button>
-          <a href="login"><button class="button is-large is-fullwidth" id="entrar">Já tenho uma conta.</button></a>
-        </div>
-      </p>
-    </section>
-  </div>
-  
-  <!--fim da imagem-->
-  
-  <!--"O jeito mais inovador de aprender idiomas"  || Box-->
-  <!--<div class="columns box">
-    <div class="column">
-      <img class="Aurora" src="https://cdn.pixabay.com/photo/2016/10/27/09/59/brain-1773885_960_720.png">
-    </div>
-    <div class="column">
-      <h1 class="title"><strong>O jeito mais inovador de aprender Português</strong> </h1>
-      <h2 class="subtitle">
-        Aprender com o Duolingo é divertido e viciante. Ganhe pontos ao acertar, corra contra o tempo e passe de nível. As nossas aulas são curtinhas e eficazes, e nós temos provas de que elas funcionam mesmo.
-      </h2>
-    </div>
-  </div> -->
-  
-  <!--  "Cada lição é um jogo"-->
-  <div class="box"  id="jogos">
-    <h1 class="title" id="titulo">
-      <strong>
-        Cada lição é um jogo
-      </strong>
-    </h1>
-    <br>
-    <div class="columns">
-      <div class="column">
-        <div class="column">
-          <img src="index/img/waerning01.png" alt="logo">
-        </div>
-        <div class="column">
-          <img src="index/img/warning02.png" alt="logo">
-        </div>
-        <br>
-      </div>
-      <br>
-      <div class="column">
-        <img src="index/img/aurora.png" alt="logo">
-      </div>
-      <br>
-      <div class="column">
-        <div class="column">
-          <img src="index/img/warning03.png" alt="logo">
-        </div>
-        <div class="column">
-          <img src="index/img/warning04.png" alt="logo">
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
+<html lang="pt-br">
 
-  <!--frase final-->
-  <section id="periferia">
-    <div class="hero-body">
-      <section class="box">
-        <div class="columns">
-          <div class="column">
-            <figure class="image is-128x128">
-              <img src="https://bulma.io/images/placeholders/128x128.png">
-            </figure>
-          </div>
-          <div class="column">
-            <p class="title" >
-              Periferia conhece periferia
-            </p>
-            <br>
-            <p class="subtitle">
-              Nossa missão é levar conhecimento para as periferias, desacelerando a defasagem causada pela pandêmia, e contribuindo para o sucesso da educação nacional.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
-    
-    <div class="hero-body" id="periferia">
-      <section class="box">
-        <div class="columns">
-          <div class="column">
-            <figure class="image is-128x128">
-              <img src="https://bulma.io/images/placeholders/128x128.png">
-            </figure>
-          </div>
-          <div class="column">
-            <p class="title" >
-              Empoderar e aprender
-            </p>
-            <br>
-            <p class="subtitle">
-              Nosso valor é  ajudar as pessoas a superarem seus medos de realizar uma redação em entrevistas de emprego, vestibulares e outros meios, as empoderando através da educação
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    </div>
-  </section>
-  <!--Feedback-->
-  <section class="section is-medium"  id="midia">
-    <div>
-      <img src="index/img/racionais.png">
-      
-    </div>
-    <br>
-    <div class="columns" >
-      <div class="column">
-        <div class="box" id="comentario">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-64x64">
-                <img src="index/img/iconpeople.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>José Victor</strong> <small>@contato.vieira@gmail.com</small> 
-                  <br>
-                  Adorei a plataforma, os professores são incriveis e empenhados, além de serem super atenciosos e fazerem de tudo para ajudar o aluno a ser melhor!.
-                </p>
-              </div>
-              <nav class="level is-mobile">
-                <div class="level-left">
-                  <a class="level-item" aria-label="reply">
-                    <span class="icon is-small">
-                      <i class="fas fa-reply" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="retweet">
-                    <span class="icon is-small">
-                      <i class="fas fa-retweet" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="like">
-                    <span class="icon is-small">
-                      <i class="fas fa-heart" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="column">
-        <div class="box"id="comentario">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-64x64">
-                <img src="index/img/iconpeople.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>José Victor</strong> <small>@contato.vieira@gmail.com</small>
-                  <br>
-                  Adorei a plataforma, os professores são incriveis e empenhados, além de serem super atenciosos e fazerem de tudo para ajudar o aluno a ser melhor!.
-                </p>
-              </div>
-              <nav class="level is-mobile">
-                <div class="level-left">
-                  <a class="level-item" aria-label="reply">
-                    <span class="icon is-small">
-                      <i class="fas fa-reply" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="retweet">
-                    <span class="icon is-small">
-                      <i class="fas fa-retweet" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="like">
-                    <span class="icon is-small">
-                      <i class="fas fa-heart" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </article>
-        </div>
-      </div>
-      
-      <div class="column" >
-        <div class="box" id="comentario">
-          <article class="media" >
-            <div class="media-left" >
-              <figure class="image is-64x64">
-                <img src="index/img/iconpeople.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content" >
-              <div class="content">
-                <p>
-                  <strong>José Victor</strong> <small>@contato.vieira@gmail.com</small>
-                  <br>
-                  Adorei a plataforma, os professores são incriveis e empenhados, além de serem super atenciosos e fazerem de tudo para ajudar o aluno a ser melhor!.
-                </p>
-              </div>
-              <nav class="level is-mobile">
-                <div class="level-left">
-                  <a class="level-item" aria-label="reply">
-                    <span class="icon is-small">
-                      <i class="fas fa-reply" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="retweet">
-                    <span class="icon is-small">
-                      <i class="fas fa-retweet" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="like">
-                    <span class="icon is-small">
-                      <i class="fas fa-heart" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="column">
-        <div class="box" id="comentario">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-64x64">
-                <img src="index/img/iconpeople.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>José Victor</strong> <small>@contato.vieira@gmail.com</small>
-                  <br>
-                  Adorei a plataforma, os professores são incriveis e empenhados, além de serem super atenciosos e fazerem de tudo para ajudar o aluno a ser melhor!.
-                </p>
-              </div>
-              <nav class="level is-mobile">
-                <div class="level-left">
-                  <a class="level-item" aria-label="reply">
-                    <span class="icon is-small">
-                      <i class="fas fa-reply" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="retweet">
-                    <span class="icon is-small">
-                      <i class="fas fa-retweet" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                  <a class="level-item" aria-label="like">
-                    <span class="icon is-small">
-                      <i class="fas fa-heart" aria-hidden="true"></i>
-                    </span>
-                  </a>
-                </div>
-              </nav>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-  
-  
-<!--footer-->
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Dialeto</strong>, a sua plataforma de português.
-    </p>
-  </div>
-</footer>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dialeto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Provê informações sobre o app e como ele se comporta quando instalado -->
+	<link rel="manifest" href="../index/json/manifest.json">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/8.6.5/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+
+	<!-- Tags para compatibilidade em iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Meu App">
+	<link rel="apple-touch-icon" href="../index/img/icon-192.png">
+	<link rel="icon" href="../index/img/dialeto.png">
+
+	<!--Link do framework-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="../index/css/Style.css" media="screen" />
+	<script src="main.js" defer></script>
+
+</head>
+
+<body>
+	<!--navbar branca-->
+
+	<nav class="navbar" role="navigation" aria-label="main navigation" id="nav-branca">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="">
+				<img src="../index/img/dialeto.png">
+			</a>
+
+		</div>
+	</nav>
+	<!--Navbar e hero-->
+	<nav class="navbar">
+		<div class="container">
+			<div id="navMenu" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item">
+					</a>
+					<a class="navbar-item">
+					</a>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</nav>
+
+
+	<section class="hero is-link is-fullheight-with-navbar">
+
+		<div class="hero-body" id="bg">
+			<p class="title">
+				<img class="banner" src="../index/img/lapis.png" href='logo'>
+
+			<div class="buttons" id="cadastro">
+				<div class="column" id="chamado">
+					<h1 class="title">Aprenda português de casa e com qualidade</h1>
+				</div>
+				<br>
+				<br>
+				<div class="buttons" id="cadastro">
+					<a href="/escolha"><button class="button is-large is-fullwidth"
+							id="cadastre">Começar</button></a>
+					<a href="login"><button class="button is-large is-fullwidth" id="entrar">Já tenho uma
+							conta</button></a>
+				</div>
+				</p>
+	</section>
+	</div>
+
+	<!--fim da imagem-->
+
+	<!--  "Cada lição é um jogo"-->
+	<div class="box" id="jogos">
+		<h1 class="title" id="titulo">
+			<strong>
+				Cada lição é um jogo
+			</strong>
+		</h1>
+		<br>
+		<div class="columns">
+			<div class="column">
+				<div class="column" id="call-02">
+					<img src="../index/img/waerning01.png" alt="logo" class="icon">
+					<br>
+					<h1> Sistemas de Recompensa interativos!
+					</h1>
+					<h2 class="space">O sistema de recompensa da ‘Dialeto’ produz exercícios com o objetivo de deixar os conteúdos
+						fixados em sua mente, segundo algumas pesquisas, foi descoberto que jogos são capazes de
+						melhorar funções que nos fazem pensar, agir e compreender.
+					</h2>
+				</div>
+				<br>
+				<div class="column" id="call-02">
+					<img src="../index/img/warning02.png" alt="logo" class="icon">
+					<br>
+					<h1> Professores capacitados para te ajudar!
+					</h1>
+					<h2 class="space">Além da correção automática, você receberá um feedback do seu empenho e quais pontos precisa
+						melhorar.
+					</h2>
+				</div>
+				<br>
+			</div>
+			<br>
+			<div class="column" id="aurora">
+				<img src="../index/img/aurora.png" alt="logo">
+			</div>
+			<br>
+			<br>
+			<div class="column">
+				<div class="column" id="call-02">
+					<img src="../index/img/warning03.png" alt="logo" class="icon">
+					<br>
+					<h1> Construa sua Redação com Confiança!
+					</h1>
+					<h2 class="space">Dentro da plataforma, o aluno será capaz de desenvolver sua escrita de acordo com tudo que foi
+						passado anteriormente, desafiando a si mesmo por meio de uma redação final.
+					</h2>
+				</div>
+				<br>
+				<br>
+				<div class="column" id="call-02">
+					<img src="../index/img/warning04.png" alt="logo" class="icon">
+					<br>
+					<h1>Conteúdo revisado por profissionais!
+					</h1>
+					<h2 class="space">
+						Todas as aulas foram produzidas e revisadas por uma especialista voluntária na área, os vídeos,
+						documentos e imagens estão adaptados para uma linguagem simples de compreender.
+					</h2>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+
+	<!--frase final-->
+	<section id="periferia">
+		<div class="hero-body">
+			<section class="box">
+				<br>
+				<div class="columns">
+					<div class="column">
+						<figure class="icone-empoderar">
+							<img src="../index/img/periferia.png">
+						</figure>
+					</div>
+					<div class="column-is-three-fifths">
+						<p class="title">
+							Periferia conhece periferia
+						</p>
+						<br>
+						<p class="subtitle">
+							Nossa missão é levar conhecimento para as periferias, desacelerando a defasagem causada pela
+							pandêmia, e contribuindo para o sucesso da educação nacional.
+						</p>
+					</div>
+				</div>
+		</div>
+	</section>
+	</div>
+
+	<div class="hero-body" id="periferia">
+		<section class="box">
+			<div class="columns">
+				<div class="column-is-half">
+					<figure class="icone-empoderar">
+						<img src="../index/img/empoderar.jpg">
+					</figure>
+				</div>
+				<div class="column">
+					<p class="title">
+						Empoderar e aprender
+					</p>
+					<br>
+					<p class="subtitle">
+						Nosso valor é ajudar as pessoas a superarem seus medos de realizar uma redação em entrevistas de
+						emprego, vestibulares e outros meios, as empoderando através da educação.
+					</p>
+				</div>
+			</div>
+	</div>
+	</section>
+	</div>
+	</section>
+	<!--Feedback-->
+	<section class="section is-medium" id="midia">
+		<div class="title" id="chamado03">
+			<h1>"Ginga e fala gíria, gíria não, dialeto!" - Racionais Mc's</h1>
+
+		</div>
+		<br>
+		<div class="columns">
+			<div class="column">
+				<div class="box" id="comentario">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="../index/img/Yuuki.png" alt="Image">
+							</figure>
+						</div>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>Yuuki Molina Póvoa
+									</strong> <small>yuuki.povoa@gmail.com
+									</small>
+									<br>
+									“A dinâmica da plataforma oferece experiências incríveis entre os professores e os
+									alunos, fortalecendo nossas relações com as pessoas do outro lado da tela.”
+								</p>
+							</div>
+							<nav class="level is-mobile">
+								<div class="level-left">
+									<a class="level-item" aria-label="reply">
+										<span class="icon is-small">
+											<i class="fas fa-reply" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="retweet">
+										<span class="icon is-small">
+											<i class="fas fa-retweet" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="like">
+										<span class="icon is-small">
+											<i class="fas fa-heart" aria-hidden="true"></i>
+										</span>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="column">
+				<div class="box" id="comentario">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="../index/img/laura.jpg" alt="Image">
+							</figure>
+						</div>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>Laura Xavier Chagas</strong> <small>laurao18@gmail.com
+									</small>
+									<br>
+									“As atividades me estimularam a melhorar e hoje posso dizer que sou capaz de efetuar
+									bem uma redação, algo que não me sentia capaz há alguns meses, obrigado Dialeto!”
+
+								</p>
+							</div>
+							<nav class="level is-mobile">
+								<div class="level-left">
+									<a class="level-item" aria-label="reply">
+										<span class="icon is-small">
+											<i class="fas fa-reply" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="retweet">
+										<span class="icon is-small">
+											<i class="fas fa-retweet" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="like">
+										<span class="icon is-small">
+											<i class="fas fa-heart" aria-hidden="true"></i>
+										</span>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="box" id="comentario">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="../index/img/Design sem nome.png" alt="Image">
+							</figure>
+						</div>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>José Victor</strong> <small>contato.vieira@gmail.com</small>
+									<br>
+									Adorei a plataforma, os professores são incriveis e empenhados, além de serem super
+									atenciosos e fazerem de tudo para ajudar o aluno a ser melhor!.
+								</p>
+							</div>
+							<nav class="level is-mobile">
+								<div class="level-left">
+									<a class="level-item" aria-label="reply">
+										<span class="icon is-small">
+											<i class="fas fa-reply" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="retweet">
+										<span class="icon is-small">
+											<i class="fas fa-retweet" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="like">
+										<span class="icon is-small">
+											<i class="fas fa-heart" aria-hidden="true"></i>
+										</span>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="column">
+				<div class="box" id="comentario">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="../index/img/diego.png" alt="Image">
+							</figure>
+						</div>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>Diego Andrade dos Santos
+									</strong> <small>contato.diegosantos@gmail.com
+									</small>
+									<br>
+									“Passei na minha entrevista de emprego por conta da redação e me sinto realizada por
+									ter realizado o curso da Dialeto! Quero agradecer a todos os professores que me
+									acompanharam durante esses últimos meses.”
+								</p>
+							</div>
+							<nav class="level is-mobile">
+								<div class="level-left">
+									<a class="level-item" aria-label="reply">
+										<span class="icon is-small">
+											<i class="fas fa-reply" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="retweet">
+										<span class="icon is-small">
+											<i class="fas fa-retweet" aria-hidden="true"></i>
+										</span>
+									</a>
+									<a class="level-item" aria-label="like">
+										<span class="icon is-small">
+											<i class="fas fa-heart" aria-hidden="true"></i>
+										</span>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+
+
+	<!--footer-->
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+				<strong>Dialeto</strong>, a sua plataforma de português.
+			</p>
+			<div id="contato">
+				<table>
+					<thead>
+						<tr>
+							<th>Fale Conosco</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Email:</strong> Dialeto@outolook.com</td>
+						</tr>
+						<tr>
+							<td><strong>Telefone:</strong> 11994543209</td>
+						</tr>
+						<tr>
+					</tbody>
+				</table>
+			</div>
+	</footer>
 </body>
+
 </html>
